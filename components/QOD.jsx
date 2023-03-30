@@ -16,7 +16,11 @@ export default function(){
             type: "text",
             isRequired: true
         }, {
-            elements:[{
+            name: "SafetyQuestion1",
+            title: "What should you do when you see some water spilled on the floor?",
+            type: "text",
+            isRequired: true,
+            /*elements:[{
             type: "radiogroup",
             name: "SafetyQuestion1",
             isRequired: true,
@@ -27,7 +31,7 @@ export default function(){
             choices: [ "Report Management", "Dry it yourself"],
             separateSpecialChoices: true,
             showClearButton: true,
-            correctAnswer: "Report Management"}]
+            correctAnswer: "Report Management"}]*/
         }, {
             name: "SafetyQuestion2",
             title:"How many bandages would you apply if you have a big cut? (Trick question)",
