@@ -16,15 +16,17 @@ export default function(){
             type: "text",
             isRequired: true
         }, {
-            name: "SafetyQuestion1",
-            isRequired: true,
             elements:[{
             type: "radiogroup",
+            name: "SafetyQuestion1",
+            isRequired: true,
+            showNoneItem: true,
+            showOtherItem: true,
+            colCount: 1,
             title: "What should you do when you see some water spilled on the floor?",
-            choices: [
-                "Report Management",
-                "Dry it yourself"
-            ],
+            choices: [ "Report Management", "Dry it yourself"],
+            separateSpecialChoices: true,
+            showClearButton: true,
             correctAnswer: "Report Management"}]
         }, {
             name: "SafetyQuestion2",
