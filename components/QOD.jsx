@@ -6,10 +6,10 @@ import { Survey } from 'survey-react-ui';
 export default function(){
     const surveyJson = {
         elements: [{
-          name: "FullName",
-          title: "Enter your full name:",
-          type: "text",
-          isRequired: true
+            name: "FullName",
+            title: "Enter your full name:",
+            type: "text",
+            isRequired: true
         }, {
             name: "EmployeeNumber",
             title: "Enter your employee number:",
@@ -19,7 +19,10 @@ export default function(){
             name: "SafetyQuestion1",
             title: "What should you do when you see some water spilled on the floor?",
             type: "text",
-            isRequired: true
+            isRequired: true,
+            validator: [{
+                text: "report management"
+            }]
         }, {
             name: "SafetyQuestion2",
             title:"How many bandages would you apply if you have a big cut? (Trick question)",
