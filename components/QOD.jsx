@@ -18,7 +18,7 @@ export default function(){
         }, {
             name: "SafetyQuestion1",
             title: "What should you do when you see some water spilled on the floor?",
-            type: "text",
+            type: "panel",
             isRequired: true,
             choice: [
                 { value: true, text: "Report Management"},
