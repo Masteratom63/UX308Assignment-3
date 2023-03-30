@@ -21,10 +21,11 @@ export default function(){
             elements:[{
             type: "radiogroup",
             title: "What should you do when you see some water spilled on the floor?",
-            "choice": [
-                { value: true, text: "Report Management"},
-                { value: false, text: "Dry it yourself"}
-            ]}]
+            choices: [
+                "Report Management",
+                "Dry it yourself"
+            ],
+            correctAnswer: "Report Management"}]
         }, {
             name: "SafetyQuestion2",
             title:"How many bandages would you apply if you have a big cut? (Trick question)",
